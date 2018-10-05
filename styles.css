@@ -1,0 +1,263 @@
+/* Add Your Styles Here */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* --------------- Main Header ---------------- */
+.main-header{
+    background-image: url("images/technology.JPG");
+    background-size: cover;
+    padding: 15px;
+    color: white;
+    text-align: right;
+}
+
+/* ----------------- Main Navigation ---------------- */
+.main-nav{
+    background-color: black;
+    overflow: hidden;
+}
+.main-nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.main-nav ul li{
+    float: left;
+}
+.main-nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+}
+.main-nav ul li a:hover{
+    background-color: #768066;
+}
+.main-nav ul li a.active{
+    background-color: #63c75b;
+}
+
+/* ------------------- Latest News -------------------- */
+.latest-news{
+    background-color: black;
+    color: white;
+    padding: 8px;
+    font-size: 15px;
+    margin-top: 5px;
+    overflow: hidden;
+    animation: latest-news 2s infinite linear;
+}
+@keyframes latest-news {
+    0%,50%,100%{background-color: #768066}
+    25%,75%{background-color: black}
+}
+.latest-news span{
+    color: orangered;
+}
+.latest-news p{
+    margin: 0;
+    animation: news 10s infinite linear;
+}
+@keyframes news {
+    0%{transform: translateX(100%)}
+    100%{transform: translateX(-100%)}
+}
+
+/* ------------------ Main News Section ----------------- */
+.main-news-section{
+    margin-left: 150px;
+}
+.main-news-article{
+    border: 2px solid black;
+    width: 330px;
+    float: left;
+    text-align: center;
+    height: 500px;
+    margin: 5px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+.main-news-article:hover{
+    width: 340px;
+    box-shadow: 0 0 15px black;
+    cursor: pointer;
+}
+.main-news-article img{
+    width: 100%;
+}
+.main-news-text{
+    padding: 10px;
+}
+
+/* ----------------- Break ------------- */
+.break{
+    clear: both;
+}
+
+/* ------------------- Home News Section --------------- */
+.home-news-section{
+    width: 1100px;
+    margin: auto;
+}
+.hom-news-article h2{
+    background: linear-gradient(to right,forestgreen,black,forestgreen);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 0 15px black;
+}
+.zoom{
+    width: 600px;
+    height: 350px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+    overflow: hidden;
+}
+.zoom img{
+    width: inherit;
+    height: inherit;
+    border-radius: 15px;
+    transition: all 1s;
+}
+.zoom:hover img{
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+.hom-news-article{
+    font-size: 18px;
+    text-align: center;
+}
+
+/* ---------------- Main Footer -------------- */
+.main-footer{
+    background: linear-gradient(to right,#788366,black,#788366);
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+.main-footer a{
+    color: orange;
+}
+
+/* -------------- Gallery Section ----------------- */
+.gallery-section{
+
+}
+.gallery-article{
+    border: 2px solid black;
+    width: 300px;
+    float: left;
+    margin: 7px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.gallery-article:hover{
+    box-shadow: 0 0 15px black;
+}
+.gallery-zoom{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.gallery-zoom img{
+    width: inherit;
+    height: inherit;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+.gallery-zoom:hover img{
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+
+/* ---------------- About Us ----------------- */
+.about-section{
+    width: 1100px;
+    margin: auto;
+}
+.about-article{
+    background: white url("images/image5.jpeg") no-repeat scroll bottom;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+}
+.company-images{
+    text-align: center;
+}
+.company-images img{
+    width: 250px;
+    height: 150px;
+    margin: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+}
+
+/* --------------- Contact Section --------------- */
+.contact-section{
+    background: white url("images/image5.jpeg") no-repeat scroll left top;
+    padding: 10px;
+}
+.contact-article{
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+}
+.contact-article h2{
+    color: white;
+}
+input[type='text'],
+input[type='email']{
+    font-size: 18px;
+    text-align: center;
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px solid #788366;
+    color: white;
+}
+input[type='text']:focus,
+input[type='email']:focus{
+    border-bottom: 3px solid #63c75b;
+}
+::placeholder{
+    color: lightgray;
+}
+textarea{
+    margin: 10px;
+    background: transparent;
+    border: 3px solid #788366;
+    outline: none;
+    color: white;
+    width: 200px;
+    border-radius: 10px;
+}
+textarea:focus{
+    border: 3px solid #63c75b;
+}
+input[type='submit']{
+    background-color: #768066;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 10px 45px;
+    border-radius: 50px;
+}
+input[type='submit']:hover{
+    cursor: pointer;
+    background-color: #63c75b;
+    box-shadow: 0 0 15px white;
+}
